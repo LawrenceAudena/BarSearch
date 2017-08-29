@@ -4,7 +4,6 @@
 			<p class="searchAgain"><a href="/" title="" class="subtitle"><i class="fa fa-home"></i>search</a></p>
 
 			<h2 class="title">Names already in use</h2>
-			<!-- <p class="searchAgain"><a href="/" title="" class="title is-6 content is-small">search again</a></p> -->
 			
 			<div class="block storeNames">
 				
@@ -16,7 +15,6 @@
 								<li class=""><%= store.street %></li>
 								<li class=""><%= store.city %> <%= store.state %><%= store.zip %> </li>
 								<li class=""> <%= store.phone %></li>
-								<li class=""><a href="http://www.<%= store.url %>"title="store link"><%=store.url= store.url.substring(0, store.url.indexOf('com')+3) %></a></li> 
 							</ul>
 						</section>
 					</div>
@@ -26,6 +24,12 @@
 		</div>
 
 <% include ./partials/footer %>
+
+get it as an array and splice anything after com
+
+get the address and find the ending equal to com 
+if there is anywords after com 
+remove it
 
 	
 </body>

@@ -35,3 +35,6 @@ app.post('/addFriend', function(req, res){
     });
     res.redirect('/friends');
 });
+
+//results page add the url
+<li class=""><a href="http://www.<%= store.url %>"title="store link"><%=store.url= store.url.substring(0, store.url.indexOf('com')+3) %></a></li> 
