@@ -1,0 +1,72 @@
+
+ul li{
+	list-style-type: none;
+}
+/*.storeNames h4{
+	color: red;
+	margin-bottom: 0;
+}*/
+.wrapper{
+	max-width: auto;
+	max-height: auto;
+	margin: 0 auto;
+	padding: 30px 0;
+	text-align: center
+}
+.results{
+	text-align: left;
+}
+.search button{
+	display: block;
+	margin: 20px auto;
+}
+body{
+	background: #6bc2fb;
+	padding-bottom: 50px;
+}
+.navbar{
+	background-color: transparent;
+	height: 100%;
+}
+.meat{
+	padding-top: 50px;
+}
+.searchAgain{
+	  margin-bottom: 30px;
+    display: block;
+}
+.searchAgain .fa-home{
+	  padding-right: 5px;
+	  vertical-align: middle;
+}
+.menu-list a {
+  border-radius: 2px;
+  color: #4a4a4a;
+  display: block;
+  padding: .2em 0;
+}
+.headerBdy{
+	background-color: #d7f9fc;
+}
+.mainIndex{
+	text-align: center;
+}
+.mainSearch{
+	max-width: 60%;
+	text-align: center;
+	margin: 0 auto;
+}
+.resource{
+	text-align: center;
+	margin-top: 120px;
+}
+.copyRight{
+	text-align: center;
+	margin-top: 20px;
+}
+.results{
+	padding-top: 20px;
+}
+.api{
+	color: #F8992C;
+}
