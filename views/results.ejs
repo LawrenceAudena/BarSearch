@@ -1,0 +1,32 @@
+	<% include ./partials/header %>
+		
+		<div class="block results">
+			<p class="searchAgain"><a href="/" title="" class="subtitle"><i class="fa fa-home"></i>search</a></p>
+
+			<h2 class="title">Names already in use</h2>
+			<!-- <p class="searchAgain"><a href="/" title="" class="title is-6 content is-small">search again</a></p> -->
+			
+			<div class="block storeNames">
+				
+				<% data.forEach(function(store){  %>
+					<div class="box">
+						<section class="content">			
+							<ul class="menu-list">
+								<li><h4 class="title is-5"><%= store.name %></h4></li>
+								<li class=""><%= store.street %></li>
+								<li class=""><%= store.city %> <%= store.state %><%= store.zip %> </li>
+								<li class=""> <%= store.phone %></li>
+								<li class=""><a href="http://www.<%= store.url %>"title="store link"><%=store.url= store.url.substring(0, store.url.indexOf('com')+3) %></a></li> 
+							</ul>
+						</section>
+					</div>
+				<% }) %>
+				
+			</div>
+		</div>
+
+<% include ./partials/footer %>
+
+	
+</body>
+</html>
