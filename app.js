@@ -1,6 +1,7 @@
 var express = require('express'),
 		request = require('request'),
 		geoip = require('geoip-lite'),
+		config = require('dotenv').config(),
 		bodyParser= require('body-parser');
 
 var app = express();
@@ -18,7 +19,7 @@ app.get('/', function(req, res){
 
 app.get('/results', function(req, res){
 	var baseURI= 'http://beermapping.com/webservice/locquery/';
-	var apiKey ='7ff253f8031130da09eac402aced3be4/';
+	var apiKey = process.env.API_KEY;
 	var query= req.query.search;
 	var url = baseURI  + apiKey + query +'&s=json';
 	
@@ -30,9 +31,6 @@ app.get('/results', function(req, res){
 			}else{
 				res.render('results',{data: data});
 			}
-			
-			//res.send(data);
-			
 		} 
 	});
 });
